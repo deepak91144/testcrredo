@@ -1,38 +1,600 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* custom styles */
+.Header {
+	background-color: #282c34;
+}
+h2.company-name {
+	display: inline-block;
+	padding-left: 100px;
+}
+h2.company-name .first-name {
+	text-transform: capitalize;
+	color: white;
+}
+h2.company-name .last-name {
+	text-transform: capitalize;
+	color: yellow;
+}
+.menu {
+	float: right;
+	color: white;
+}
+.menu ul {
+	text-decoration: none;
+	list-style: none;
+	margin-right: 60px;
+	display: inline-block;
+}
+.menu ul li {
+	display: inline-block;
+	padding: 10px;
+	text-transform: capitalize;
+}
+
+.menu ul li a {
+	color: white;
+	text-decoration: none;
+}
+.menu ul li a.active {
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: yellow;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+.img-container {
+	display: inline-block;
+	margin-right: 180px;
+	position: relative;
+	top: 18px;
+}
+.img-container img {
+	border-radius: 30px;
+}
+.card-wrap {
+	margin-top: 100px;
+	text-align: center;
+}
+.card {
+	/* Add shadows to create the "card" effect */
+
+	width: 15%;
+	color: white;
+	margin: 15px;
+	box-shadow: 0 4px 8px 0 #282c34;
+	background-color: #282c34;
+	transition: 0.3s;
+	display: inline-block;
+	border-radius: 10px;
+}
+.card img {
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	z-index: 9999;
+	position: relative;
+	bottom: 20px;
+}
+.card h4.name b {
+	position: relative;
+	bottom: 43px;
+}
+.card .container tr.heading-row th {
+	padding: 15px;
+	color: gray;
+	text-transform: capitalize;
+}
+.card .container tr.data-row td {
+	padding: 15px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 2px 16px;
+}
+
+.os-conatiner {
+	margin-top: 50px;
+	margin-left: 135px;
+	background-color: #282c34;
+	width: 45%;
+	border-radius: 10px;
+}
+.os-conatiner tr {
+	text-align: center;
+}
+.os-conatiner tr.first-heading th {
+	color: gray;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	left: 45px;
+}
+.os-conatiner tr.first-heading th .icons {
+	position: relative;
+	right: 10px;
+	top: 5px;
+	border-radius: 50%;
+	background-color: black;
+}
+.os-conatiner tr.second-heading th .icons {
+	position: relative;
+	right: 10px;
+	top: 5px;
+	border-radius: 50%;
+	background-color: black;
+}
+.os-conatiner tr.second-heading th {
+	color: gray;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	left: 70px;
+}
+.os-conatiner tr.first-heading th span {
+	color: white;
+	position: relative;
+	top: 5px;
+	right: 65px;
+}
+.os-conatiner tr.second-heading th span {
+	color: white;
+	position: relative;
+	top: 5px;
+	right: 75px;
+}
+
+.second-section tr th {
+	color: gray;
+	padding: 22px;
+	text-align: center;
+	position: relative;
+	left: 50px;
+}
+
+.second-section tr.first-heading th span {
+	color: white;
+	position: relative;
+	top: 5px;
+	right: 50px;
+}
+.second-section tr.first-heading th .icons {
+	position: relative;
+	right: 10px;
+	top: 8px;
+	border-radius: 50%;
+	background-color: black;
+}
+.second-section tr.second-heading th .icons {
+	position: relative;
+	right: 10px;
+	top: 8px;
+	border-radius: 50%;
+	background-color: black;
+}
+.second-section tr.second-heading th span {
+	color: white;
+	position: relative;
+	top: 5px;
+	right: 30px;
+}
+.second-section tr.first-heading th span.last {
+	position: relative;
+	left: 15px;
+}
+.second-section tr.second-heading th span.last {
+	position: relative;
+	left: 40px;
+}
+.qs-container {
+	border: 1px dotted white;
+	width: 10%;
+	color: white;
+	box-sizing: border-box;
+	font-size: 10px;
+	border-radius: 10px;
+	min-height: 300px;
+	margin-left: 130px;
+	margin-top: 60px;
+}
+.qs-container tr th {
+	padding: 5px;
+	position: relative;
+	top: 20px;
+}
+.qs-container img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	left: 10px;
+	bottom: 20px;
+	z-index: 999;
+}
+div.loading {
+	margin-left: 230px;
+}
+.qs-container span.qc-text {
+	position: relative;
+	left: 30px;
+	bottom: 30px;
+}
+.qs-container button {
+	border-radius: 50%;
+	background-color: yellow;
+}
+.qs-container tr th span {
+	color: gray;
+}
+h2.qs-text {
+	color: white;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+.qs-list {
+	color: white;
+	list-style: none;
+	margin-left: 70px;
+}
+.qs-list li {
+	display: inline-block;
+	padding: 20px;
+}
+.op-container {
+	text-align: center;
+	margin-right: 250px;
+	margin-left: 85px;
+}
+.op-container div {
+	margin: 20px;
+}
+.op-container div .icons {
+	position: relative;
+	right: 10px;
+	border-radius: 50%;
+	background-color: black;
+	top: 7px;
+}
+div.report {
+	color: white;
+	text-align: center;
+	margin: 300px;
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.op-container .op-first-section {
+	border: 2px solid #282c34;
+	background-color: #282c34;
+	color: white;
+	width: 20%;
+
+	display: inline-block;
+}
+.op-container .op-second-section {
+	color: white;
+	display: inline-block;
+	width: 20%;
+	padding: 10px;
+	background-color: #282c34;
+	border: 1px solid #282c34;
+}
+.op-container .op-third-section {
+	color: white;
+	width: 20%;
+	background-color: #282c34;
+	display: inline-block;
+	border: 1px solid #282c34;
+}
+.op-container .op-fourth-section {
+	width: 20%;
+	color: white;
+	background-color: #282c34;
+	display: inline-block;
+	border: 1px solid #282c34;
+	padding: 10px;
+}
+h2.op-text {
+	color: white;
+	margin-left: 120px;
+}
+.op-container div th div {
+	color: gray;
+}
+
+@media screen and (max-width: 1025px) {
+	/* body {
+		background-color: blue;
+	} */
+	div.loading {
+		margin-left: 130px;
+	}
+	.os-conatiner tr.first-heading th {
+		color: gray;
+		padding: 20px;
+		text-align: center;
+		position: relative;
+		left: -10px;
+		font-size: 10px;
+	}
+	.os-conatiner tr.first-heading th span {
+		position: relative;
+		right: 37px;
+	}
+	.os-conatiner tr.second-heading th span {
+		position: relative;
+		right: 40px;
+	}
+	.os-conatiner tr.second-heading th {
+		color: gray;
+		padding: 20px;
+		text-align: center;
+		position: relative;
+		left: 5px;
+		font-size: 10px;
+	}
+	.main-container div.second-section {
+		position: relative;
+		left: -40px;
+		top: -160px;
+	}
+	.main-container div.second-section tr th {
+		position: relative;
+		left: 5px;
+		font-size: 10px;
+	}
+
+	.qs-container {
+		width: 15%;
+	}
+	.op-container {
+		position: relative;
+		left: 25px;
+	}
+	.op-container .op-first-section {
+		box-sizing: border-box;
+		margin: 0px;
+		width: 20%;
+	}
+	.op-container .op-second-section {
+		box-sizing: border-box;
+		padding: 0px;
+		width: 20%;
+		position: relative;
+		top: 15px;
+	}
+	.op-container .op-third-section {
+		box-sizing: border-box;
+		padding: 0px;
+		width: 20%;
+		position: relative;
+		top: 15px;
+	}
+	.op-container .op-fourth-section {
+		padding: 10px;
+		box-sizing: border-box;
+
+		position: relative;
+		top: 15px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	div.loading {
+		margin-left: 130px;
+	}
+	.os-conatiner tr.first-heading th .icons {
+		position: relative;
+		right: 40px;
+		top: 5px;
+		border-radius: 50%;
+		background-color: black;
+	}
+	.os-conatiner tr.second-heading th .icons {
+		position: relative;
+		right: 70px;
+		top: 5px;
+		border-radius: 50%;
+		background-color: black;
+	}
+	.os-conatiner tr.second-heading th {
+		position: relative;
+		right: 10px;
+	}
+	.os-conatiner tr.first-heading th span {
+		color: white;
+		position: relative;
+		top: 5px;
+
+		right: 30px;
+	}
+	.os-conatiner tr.second-heading th span {
+		color: white;
+		position: relative;
+		top: 5px;
+		right: 30px;
+	}
+	.main-container div.second-section {
+		position: relative;
+		left: -40px;
+		top: -190px;
+	}
+	.main-container div.second-section tr.second-heading span.last {
+		font-size: 10px;
+		position: relative;
+		left: 10px;
+	}
+	div.main-container {
+		padding: 0px;
+		margin: 0px;
+	}
+	div.Header {
+		display: inline-block;
+		padding: 0px;
+		margin: 0px;
+		width: max-content;
+	}
+	div.Header div.menu {
+		margin-left: 120px;
+	}
+	.qs-container {
+		width: 20%;
+	}
+	ul.qs-list li {
+		padding: 1px;
+	}
+	div.card-wrap {
+		margin-left: 40px;
+	}
+	div.card {
+		width: 23%;
+	}
+	.op-container .op-first-section {
+		width: 40%;
+	}
+	.op-container .op-second-section {
+		width: 40%;
+	}
+	.op-container .op-third-section {
+		width: 40%;
+	}
+	.op-container .op-fourth-section {
+		width: 40%;
+	}
+	.op-container th div {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.main-container div.second-section {
+		display: none;
+	}
+	.main-container div.os-conatiner {
+		margin-left: 220px;
+		width: 75%;
+	}
+	div.loading {
+		margin-left: 250px;
+	}
+	.qs-container {
+		width: 40%;
+	}
+	div.card-wrap {
+		margin-left: 300px;
+	}
+	div.card {
+		width: 150%;
+	}
+	div.root h2.elve-text {
+		margin-left: 300px;
+	}
+	.qs-container {
+		margin-left: 300px;
+	}
+	.qs-list {
+		margin-left: 300px;
+	}
+	h2.qs-text {
+		margin-left: 277px;
+	}
+	div.op-container div.op-first-section {
+		width: 200%;
+		margin-left: 200px;
+	}
+	div.op-container div.op-second-section {
+		width: 200%;
+		margin-left: 200px;
+	}
+	div.op-container div.op-third-section {
+		width: 200%;
+		margin-left: 200px;
+	}
+	div.op-container div.op-fourth-section {
+		width: 200%;
+		margin-left: 200px;
+	}
+	h2.op-text {
+		margin-left: 300px;
+	}
+	h2.elve-text {
+		margin-left: 300px;
+	}
+	div.sum-con {
+		margin-left: 100px;
+	}
+	div.elve-con {
+		margin-left: 100px;
+	}
+}
+@media screen and (max-width: 376px) {
+	.main-container div.second-section {
+		display: none;
+	}
+	.main-container div.os-conatiner {
+		margin-left: 220px;
+		width: 85%;
+	}
+	div.card {
+		width: 222px;
+	}
+	div.op-container div.op-first-section {
+		width: 300%;
+	}
+	div.op-container div.op-second-section {
+		width: 300%;
+	}
+	div.op-container div.op-third-section {
+		width: 300%;
+	}
+	div.op-container div.op-fourth-section {
+		width: 300%;
+	}
+	div.sum-con {
+		margin-left: 130px;
+	}
+	div.elve-con {
+		margin-left: 130px;
+	}
 }
